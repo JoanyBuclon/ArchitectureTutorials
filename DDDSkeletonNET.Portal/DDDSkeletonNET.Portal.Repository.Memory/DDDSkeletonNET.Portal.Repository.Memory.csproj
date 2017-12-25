@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DDDSkeleton.Portal.Domain\DDDSkeleton.Portal.Domain.csproj" />
+    <ProjectReference Include="..\DDDSkeletonNET.Infrastructure.Common\DDDSkeletonNET.Infrastructure.Common.csproj" />
+  </ItemGroup>
+
+</Project>
