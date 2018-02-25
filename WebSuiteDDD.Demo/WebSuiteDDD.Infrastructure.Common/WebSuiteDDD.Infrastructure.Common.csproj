@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F1082CC3-3B19-480D-AAEA-78D8C4DD36D9}</ProjectGuid>
+    <ProjectGuid>{C2153EF7-D9CD-4BB1-AE5C-12A30FDB910E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebSuiteDDD.SharedKernel</RootNamespace>
-    <AssemblyName>WebSuiteDDD.SharedKernel</AssemblyName>
+    <RootNamespace>WebSuiteDDD.Infrastructure.Common</RootNamespace>
+    <AssemblyName>WebSuiteDDD.Infrastructure.Common</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,13 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DomainEvents\DomainEventMediator.cs" />
-    <Compile Include="DomainEvents\IDomainEventHandler.cs" />
-    <Compile Include="Domain\EntityBase.cs" />
-    <Compile Include="Domain\IAggregateRoot.cs" />
-    <Compile Include="Domain\ValueObjectBase.cs" />
+    <Compile Include="Emailing\EmailArguments.cs" />
+    <Compile Include="Emailing\EmailSendingResult.cs" />
+    <Compile Include="Emailing\FakeEmailService.cs" />
+    <Compile Include="Emailing\IEmailService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

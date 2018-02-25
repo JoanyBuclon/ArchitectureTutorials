@@ -37,6 +37,7 @@ namespace WebSuiteDDD.WebApi.DependencyResolution
                     scan.WithDefaultConventions();
                 });
             //For<IExample>().Use<Example>();
+            //For<ITimetableService>().Use<TimetableService>().DecorateWith(i => new TimetableServiceWithEmail(i, new FakeEmailService()));
         }
 
         #endregion

@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Http;
-using System.Web.Routing;
+﻿using System.Web.Http;
+using WebSuiteDDD.Infrastructure.Common.Emailing;
+using WebSuiteDDD.SharedKernel.DomainEvents;
+using WebSuiteDemo.Loadtesting.ApplicationServices.Implementations;
 
 namespace WebSuiteDDD.WebApi
 {
@@ -11,6 +9,7 @@ namespace WebSuiteDDD.WebApi
     {
         protected void Application_Start()
         {
+            DomainEventMediator.RegisterDomainEventHandler(new TimetableChangedEmailEventHandler(new FakeEmailService()));
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }

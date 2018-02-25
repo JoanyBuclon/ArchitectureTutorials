@@ -233,6 +233,14 @@
     <Folder Include="Views\LoadTests\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WebSuiteDDD.Infrastructure.Common\WebSuiteDDD.Infrastructure.Common.csproj">
+      <Project>{c2153ef7-d9cd-4bb1-ae5c-12a30fdb910e}</Project>
+      <Name>WebSuiteDDD.Infrastructure.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebSuiteDDD.SharedKernel\WebSuiteDDD.SharedKernel.csproj">
+      <Project>{f1082cc3-3b19-480d-aaea-78d8c4dd36d9}</Project>
+      <Name>WebSuiteDDD.SharedKernel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WebSuiteDemo.Loadtesting.ApplicationServices\WebSuiteDemo.Loadtesting.ApplicationServices.csproj">
       <Project>{3f0cf7d1-1c75-4e94-baab-78c2c477e3e8}</Project>
       <Name>WebSuiteDemo.Loadtesting.ApplicationServices</Name>

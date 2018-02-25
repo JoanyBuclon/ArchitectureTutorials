@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using WebSuiteDDD.SharedKernel.Domain;
+using WebSuiteDDD.SharedKernel.DomainEvents;
+using WebSuiteDemo.Loadtesting.Domain.DomainEvents;
 
 namespace WebSuiteDemo.Loadtesting.Domain
 {
@@ -63,6 +65,9 @@ namespace WebSuiteDemo.Loadtesting.Domain
 
             }
 
+            AddOrUpdateLoadTestsValidationResult validationResult = new AddOrUpdateLoadTestsValidationResult(toBeInserted, toBeUpdated, failed, resultSummaryBuilder.ToString());
+            TimetableChangedEventArgs args = new TimetableChangedEventArgs(validationResult);
+            DomainEventMediator.RaiseEvent(args);
             return new AddOrUpdateLoadTestsValidationResult(toBeInserted, toBeUpdated, failed, resultSummaryBuilder.ToString());
         }
 

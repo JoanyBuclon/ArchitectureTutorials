@@ -83,6 +83,7 @@ namespace WebSuiteDemo.Loadtesting.ApplicationServices.Implementations
                         vm.Id = Guid.NewGuid();
                     }
                 }
+
                 List<LoadTestViewModel> sortedByDate = request.Loadtests.OrderBy(l => l.StartDateUtc).ToList();
                 LoadTestViewModel last = sortedByDate.Last();
                 IList<LoadTest> loadtests = _timetableRepository.GetLoadTestsForTimePeriod(sortedByDate.First().StartDateUtc, last.StartDateUtc.AddSeconds(last.DurationSec));

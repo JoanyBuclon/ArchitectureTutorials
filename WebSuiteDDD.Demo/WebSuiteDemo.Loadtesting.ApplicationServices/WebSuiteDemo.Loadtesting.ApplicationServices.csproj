@@ -41,7 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstractions\ITimetableService.cs" />
+    <Compile Include="Implementations\TimetableChangedEmailEventHandler.cs" />
     <Compile Include="Implementations\TimetableService.cs" />
+    <Compile Include="Implementations\TimetableServiceWithEmail.cs" />
     <Compile Include="Messaging\AddOrUpdateLoadtestsRequest.cs" />
     <Compile Include="Messaging\AddOrUpdateLoadtestsResponse.cs" />
     <Compile Include="Messaging\DeleteLoadtestRequest.cs" />
@@ -53,6 +55,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WebSuiteDDD.Infrastructure.Common\WebSuiteDDD.Infrastructure.Common.csproj">
+      <Project>{c2153ef7-d9cd-4bb1-ae5c-12a30fdb910e}</Project>
+      <Name>WebSuiteDDD.Infrastructure.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WebSuiteDDD.SharedKernel\WebSuiteDDD.SharedKernel.csproj">
       <Project>{f1082cc3-3b19-480d-aaea-78d8c4dd36d9}</Project>
       <Name>WebSuiteDDD.SharedKernel</Name>

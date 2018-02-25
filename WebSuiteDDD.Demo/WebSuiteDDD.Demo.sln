@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSuiteDemo.Loadtesting.Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSuiteDDD.WebApi", "WebSuiteDDD.WebApi\WebSuiteDDD.WebApi.csproj", "{A1241096-8FFF-4AA1-9180-AEBB5A18A2AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSuiteDDD.Infrastructure.Common", "WebSuiteDDD.Infrastructure.Common\WebSuiteDDD.Infrastructure.Common.csproj", "{C2153EF7-D9CD-4BB1-AE5C-12A30FDB910E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{A1241096-8FFF-4AA1-9180-AEBB5A18A2AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1241096-8FFF-4AA1-9180-AEBB5A18A2AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1241096-8FFF-4AA1-9180-AEBB5A18A2AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2153EF7-D9CD-4BB1-AE5C-12A30FDB910E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2153EF7-D9CD-4BB1-AE5C-12A30FDB910E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2153EF7-D9CD-4BB1-AE5C-12A30FDB910E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2153EF7-D9CD-4BB1-AE5C-12A30FDB910E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

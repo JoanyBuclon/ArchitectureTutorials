@@ -14,7 +14,7 @@ namespace PostDeleteActionTester
         private static Uri _serviceUri = new Uri("http://localhost:55608/loadtests");
         static void Main(string[] args)
         {
-            RunDeleteOperation();
+            RunPostOperation();
             Console.Read();
         }
 
